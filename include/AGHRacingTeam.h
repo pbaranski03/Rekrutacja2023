@@ -14,7 +14,12 @@ class AGHRacingTeam
 {
 public:
     std::vector<Member> getMembers() { return members; }
+    
+    AGHRacingTeam();
 
+    AGHRacingTeam(AGHRacingTeam& Origin);
+
+    AGHRacingTeam(std::vector<Member> MEMBER );
     /**
      * Add new member to the members array only when input is valid.
      */
